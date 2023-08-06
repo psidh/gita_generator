@@ -10,10 +10,10 @@
 <body>
 
   <!-- Collapsible Navigation Bar -->
-  <nav class="bg-yellow-600 p-4">
+  <nav class="bg-yellow-600 hover:bg-yellow-700 p-4">
     <div class="container mx-auto flex items-center justify-between">
       <!-- Logo -->
-      <a class="text-white text-2xl font-bold" href="#">Gita Sloka Generator</a>
+      <a class="text-white text-2xl font-bold" href="index.html">Gita Sloka Generator</a>
 
       <!-- Hamburger Menu for smaller screens -->
       <div class="flex md:hidden">
@@ -26,17 +26,17 @@
 
       <!-- Navigation Links for larger screens -->
       <div class="hidden md:flex space-x-4">
-        <a class="text-white hover:text-gray-200" href="#">Home</a>
-        <a class="text-white hover:text-gray-200" href="#">About</a>
-        <a class="text-white hover:text-gray-200" href="#">Contact</a>
+        <a class="text-white hover:text-gray-200" href="index.html">Home</a>
+        <a class="text-white hover:text-gray-200" href="about.html">About</a>
+        <a class="text-white hover:text-gray-200" href="#footer">Contact</a>
       </div>
     </div>
 
     <!-- Collapsible menu for smaller screens -->
     <div class="hidden md:hidden mt-4 transition-all duration-300" id="mobileMenu">
-      <a class="block text-white hover:text-gray-200 py-2" href="#">Home</a>
-      <a class="block text-white hover:text-gray-200 py-2" href="#">About</a>
-      <a class="block text-white hover:text-gray-200 py-2" href="#">Contact</a>
+      <a class="block text-white hover:text-gray-200 py-2" href="index.html">Home</a>
+      <a class="block text-white hover:text-gray-200 py-2" href="about.html">About</a>
+      <a class="block text-white hover:text-gray-200 py-2" href="#footer">Contact</a>
     </div>
   </nav>
 
@@ -45,12 +45,12 @@
 
   <div class="bg-yellow-50">
     <div class="text-center sm:text-left container mx-auto flex flex-col items-center justify-center px-4 py-8 ">
-      <h1 class="mb-6 mt-6 md:mt-24 mr-4 rounded-lg p-1 text-3xl sm:static sm:mb-0 sm:pt-0 sm:text-3xl font-bold text-yellow-800 text-center  sm:w-1/2">Gita Sloka Generator</h1>
-      <h2 class="mb-6 mt-6 mr-4 rounded-lg p-2 text-lg text-justify font-light text-gray-800"> The Gita is presented as a conversation between Prince Arjuna and Lord Krishna, who serves as his charioteer. The dialogue takes place on the battlefield of Kurukshetra, just before the start of a great war between two factions of the same royal family, the Pandavas, and the Kauravas. Arjuna is facing a moral and emotional crisis as he hesitates to participate in the war due to his conflicting emotions about fighting against his own relatives and teachers.
+      <h1 class="mb-6 mt-6 md:mt-12 mr-4 rounded-lg p-1 text-3xl sm:static sm:mb-0 sm:pt-0 sm:text-3xl font-bold text-yellow-800 text-center  sm:w-1/2">Gita Sloka Generator</h1>
+      <h2 class="mb-6 mt-6 mr-4 rounded-lg p-2 text-lg text-justify font-light text-gray-800"> The Gita is presented as a conversation between Prince Arjuna and Lord Krishna, who serves as his charioteer. The dialogue takes place on the battlefield of Kurukshetra, just before the start of a great war.
       </h2>
-      <h2 class="mb-6 mr-4 rounded-lg p-2 text-lg text-justify font-light text-gray-800">In response to Arjuna's doubts and dilemma, Lord Krishna imparts profound spiritual wisdom and guidance. The teachings of the Gita cover a wide range of topics, including duty (dharma), righteousness, the nature of the self (atman), the paths of devotion (bhakti), knowledge (jnana), and selfless action (karma).
+      <h2 class="mb-6 mr-4 rounded-lg p-2 text-lg text-justify font-light text-gray-800">The teachings of the Gita cover a wide range of topics, including duty (dharma), righteousness, the nature of the self (atman), the paths of devotion (bhakti), knowledge (jnana), and selfless action (karma).
       </h2>     
-      <div class="rounded-lg p-6 shadow-lg md:w-3/4 bg-yellow-100">
+      <div class="rounded-lg p-6 shadow-sm md:w-3/4 bg-yellow-100">
         <label for="chapterSelect" class="mb-4 mr-4 pb-4 text-lg font-semibold">Select a Chapter:</label>
         <select id="chapterSelect" class="mb-4 mr-4 w-full rounded-lg bg-gray-100 p-2">
           <option value="0">All Chapters</option>
@@ -76,34 +76,34 @@
         <p id="sloka" class="mb-4 mt-4 text-justify text-lg font-semibold italic text-gray-800">
           <!-- Sloka text will be dynamically inserted here -->
         </p>
-        <button id="previousBtn" class="m-2 rounded-xl bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-800 hover:to-blue-500 px-2 py-1 md:px-6 md:py-3 text-white shadow-md hover:bg-blue-700">
+        <button id="previousBtn" class="m-2 rounded-lg bg-blue-600 hover:bg-blue-700  px-2 py-1 md:px-6 md:py-3 text-white">
           <b><</b> Previous</button>
         
-          <button id="nextBtn" class="m-2 rounded-xl bg-gradient-to-r from-green-500 to-green-700 hover:from-green-700 hover:to-green-500 px-2 py-1 md:px-6 md:py-3 text-white shadow-md hover:bg-blue-700">
+          <button id="nextBtn" class="m-2 rounded-lg bg-green-600 hover:bg-green-700  px-2 py-1 md:px-6 md:py-3 text-white">
             Start | Next <b>></b></button>
           <button
             id="generateBtn"
-            class="m-2 rounded-xl bg-gradient-to-r from-yellow-500 to-yellow-800 hover:from-yellow-800 hover:to-yellow-500 px-2 py-1 md:px-6 md:py-3 text-white shadow-md hover:bg-blue-700">Random</button>
-
+            class="m-2 rounded-lg bg-yellow-600 hover:bg-yellow-700  px-2 py-1 md:px-6 md:py-3 text-white">
+            Random</button>
  </div>
       <!-- Search Box Div -->
-      <div class="rounded-lg p-6 shadow-lg md:w-3/4 bg-yellow-100 mt-6 mb-6">
+      <div class="rounded-lg p-6 shadow-sm md:w-3/4 bg-yellow-100 mt-6 mb-6">
         <label for="searchInput" class="mb-4 mt-4 pb-4 text-lg font-semibold">Search</label>
         <input type="text" id="searchInput" class="mb-4 mt-4 w-full rounded-lg bg-gray-100 p-2" placeholder="Enter Chapter and Verse (e.g., 12.1 or 10.23)"/> 
         <p id="sloka2" class="mb-4 mt-4 text-justify text-lg font-semibold italic text-gray-800">
           <!-- Sloka text will be dynamically inserted here -->
         </p>
-        <button id="searchBtn"class="m-2 rounded-xl bg-gradient-to-r from-red-500 to-red-700 hover:from-red-700 hover:to-red-500 px-2 py-1 md:px-6 md:py-3 text-white shadow-md hover:bg-blue-700">Search</button>
+        <button id="searchBtn"class="m-2 rounded-lg bg-red-600 hover:bg-red-800  px-2 py-1 md:px-6 md:py-3 text-white font-semibold">Search</button>
       </div>
     </div>
   </div>
 
   <!-- Footer -->
-  <footer class="bg-yellow-900 text-white md:p-8 p-4 pt-4">
+  <footer id="footer" class="bg-yellow-900 text-white md:p-8 p-4 pt-4">
     <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
       <!-- Left section of the footer -->
       <div class="mb-4 md:mb-0">
-        <p class="font-bold md:text-xl text-2xl">Gita Generator</p>
+        <p class="md:text-xl text-2xl">© <b>Gita Sloka Generator</b></p>
       </div>
 
       <!-- Middle section of the footer -->
@@ -137,3 +137,9 @@
   <script src="script.js" type="module"></script>
 </body>
 </html>
+
+
+
+
+
+

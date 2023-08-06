@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const mobileMenu = document.getElementById("mobileMenu");
 
   menuBtn.addEventListener("click", function () {
-    mobileMenu.classList.toggle("hidden");
+  mobileMenu.classList.toggle("hidden");
   });
 });
 
