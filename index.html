@@ -72,7 +72,7 @@ body {
         <span class="font-normal"> (jnana)</span>, and selfless action 
         <span class="font-normal"> (karma)</span>.
       </h2>     
-      <div class="font-ambit rounded-lg p-6 shadow-sm md:w-3/4 bg-yellow-100">
+      <div class="font-ambit rounded-lg p-6 shadow-sm md:w-3/4 bg-yellow-50">
         <label for="chapterSelect" class="mb-4 mr-4 pb-4 text-lg font-semibold">Select a Chapter:</label>
         <select id="chapterSelect" class="mb-4 mr-4 w-full rounded-lg bg-gray-100 p-2">
           <option value="0">All Chapters</option>
@@ -98,18 +98,26 @@ body {
         <p id="sloka" class="font-ambit mb-4 mt-4 text-justify text-lg font-semibold italic text-gray-800">
           <!-- Sloka text will be dynamically inserted here -->
         </p>
+        <div class="flex flex-row items-center justify-center">
+
         <button id="previousBtn" class="font-ambit  m-2 rounded-lg bg-blue-600 hover:bg-blue-700  px-2 py-1 md:px-6 md:py-3 text-white">
-          <b><</b> Previous</button>
+          Prev
+        </button>
         
-          <button id="nextBtn" class="font-ambit m-2 rounded-lg bg-green-600 hover:bg-green-700  px-2 py-1 md:px-6 md:py-3 text-white">
-            Start | Next <b>></b></button>
-          <button
+        <button
             id="generateBtn"
             class="font-ambit m-2 rounded-lg bg-yellow-600 hover:bg-yellow-700  px-2 py-1 md:px-6 md:py-3 text-white">
-            Random</button>
- </div>
+            Random
+        </button>
+
+        <button id="nextBtn" class="font-ambit m-2 rounded-lg bg-green-600 hover:bg-green-700  px-2 py-1 md:px-6 md:py-3 text-white">
+            Start | Next
+        </button>
+        
+         </div>
+       </div>
       <!-- Search Box Div -->
-      <div class="font-ambit  rounded-lg p-6 shadow-sm md:w-3/4 bg-yellow-100 mt-6 mb-6">
+      <div class="font-ambit  rounded-lg p-6 shadow-sm md:w-3/4 bg-yellow-50 mt-6 mb-6">
         <label for="searchInput" class="font-ambit mb-4 mt-4 pb-4 text-lg font-semibold">Search</label>
         <input type="text" id="searchInput" class="font-ambit mb-4 mt-4 w-full rounded-lg bg-gray-100 p-2" placeholder="Enter Chapter and Verse (e.g., 12.1 or 10.23)"/> 
         <p id="sloka2" class="font-ambit mb-4 mt-4 text-justify text-lg font-semibold italic text-gray-800">
@@ -159,9 +167,3 @@ body {
   <script src="script.js" type="module"></script>
 </body>
 </html>
-
-
-
-
-
-
