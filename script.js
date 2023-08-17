@@ -92,7 +92,7 @@ function searchSloka() {
     // Clear the search input after displaying the sloka
     document.getElementById("searchInput").value = "";
   } else {
-    alert("Enter in the format '12.1' or '10.23'.");
+    alert("Invalid input format. Please enter the chapter and verse in the format '12.1' or '10.23'.");
   }
 }
 
